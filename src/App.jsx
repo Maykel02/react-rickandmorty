@@ -1,13 +1,15 @@
-import PageCharacters from "./characters/page/pageCharacters"
+import { Routes, Route } from "react-router-dom";
+
+
+import LayoutAdmin from "./layout/admin/index"
 
 
 function App() {
 
   return (
-    <>
-        <h1 className="text-center ">Hola Mundo como estan </h1>
-        <PageCharacters/>
-    </>
+    <Routes>
+      <Route  path="/*" element={<LayoutAdmin/>} />
+    </Routes>
   )
 }
 
